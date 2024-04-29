@@ -11,7 +11,7 @@ UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Load the model
-model_dataset = YOLO("best50s-single.pt")
+model_dataset = YOLO("best50n-single.pt")
 
 def process_image(image_path):
     # Perform inference
@@ -56,4 +56,4 @@ def upload_file():
         return jsonify(result_json)
 
 if __name__ == '__main__':
-    app.run(debug=False,host='0.0.0.0')
+    app.run()
