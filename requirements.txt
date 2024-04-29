@@ -1,5 +1,0 @@
-Flask
-flask-ngrok
-Pillow
-pandas
-ultralytics
