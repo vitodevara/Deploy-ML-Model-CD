@@ -11,7 +11,7 @@ UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Load the model
-model_dataset = YOLO("best50n-single.pt")
+model_dataset = YOLO("best50s-combine.pt")
 
 def process_image(image_path):
     # Perform inference
